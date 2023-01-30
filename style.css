@@ -1,0 +1,273 @@
+:root {box-sizing: border-box;
+    font-size: 2rem;
+    font-size: clamp(1.0rem, 2.5vw, 1.6rem);
+    font-family: 'Montserrat', sans-serif;
+    
+background-color: white;}
+
+    * , ::before ,::after {box-sizing:border-box;}
+    body {margin: 0;}
+
+
+/* menu główne początek --------------------------------------------------------------------------*/ 
+
+@media screen and (max-width: 550px)  {
+    .menu
+    {
+       display: none;
+    }}
+
+    header {
+        width:100%;
+        position: absolute;
+        z-index: 1;
+    }
+.menu{
+position:fixed;
+width: 100%;
+background-color: rgb(223, 205, 188);
+opacity: 0.9;
+
+}
+ul{
+   list-style: none;
+    display: flex;
+    font-size: 0.6rem;
+    justify-content:space-evenly
+    
+
+ }
+ul li a{
+   
+ text-decoration: none;
+ color: black;
+ margin-left: 1.rem;
+
+
+
+ 
+}
+ul li a:hover{
+   
+ text-decoration: none;
+ color:white;
+transition: 0.3s;
+text-decoration: underline;
+
+}
+/* menu główne koniec----------------------------------------------------------------------------------------------- */
+
+
+/*menu 450px poczAtek-------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 550px)  {#menu450
+    {
+        display: none;
+    }}
+
+
+#menu450 {
+    position:fixed;
+    width: 100%;
+    background-color: rgb(223, 205, 188);
+    opacity: 0.9;
+
+   
+
+}
+
+
+ #menu450 ul li{
+    font-size: 20px;
+text-align: center;
+
+ }
+#menu450 ul li ul{
+    display: none;
+    
+
+}
+#menu450 ul li:hover ul{
+    display:contents;
+   
+  
+  
+}
+#menu450 ul li ul li{
+    margin-top: 10px;
+    padding: 10px;
+}
+#menu450 ul li ul li a{
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+
+}
+#menu450 ul li ul li a:hover{
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+background-color: rgb(223, 205, 188)
+
+}
+/*menu 450px koniec------------------------------------------------------------------------------------------*/
+
+/* kontener wesele początek*/
+.conteinerW{
+    display:flex;
+ justify-content: center;
+ justify-content:space-around;
+flex-wrap: wrap;
+
+}
+.boxW{
+   
+    width: 25%;
+    margin: 10px;
+min-width: 260px;
+
+}
+.img{
+   
+    width: 100%;
+   
+}
+h2 {text-align: center;}
+
+.txt{
+   padding-top: 50px;
+    width: 95%;
+    font-size: 0.7rem;
+   
+   
+}
+.kafel1 {
+    width: 100%;
+    min-width: 250px;
+    border-radius: 5px;
+   
+
+}
+.kafel1:hover{
+    transform: scale(1.1);
+transition: 0.7s;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+border-radius: 5px;
+
+}
+/*konctener wesele konec */
+/* About me                        początek */
+
+    .conteiner{ 
+       margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        display: flex;
+      justify-content: space-evenly;
+        flex-wrap: wrap;
+      
+    
+    }
+    .conteiner2{ 
+        
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap:wrap-reverse;
+        margin-top: 5%; 
+    }
+    .item1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 50%;
+    min-width: 200px;
+    max-width: 600px;
+    border-radius: 5px;
+    margin-right: 20px;
+    
+    }
+    .item-1 img{
+      
+    width: 100%;
+    }
+
+    .item-1 img:hover{
+      transform: scale(1.1);
+      transition: 1s;
+    width: 100%;
+    }
+    
+    
+    .item-2{margin-top: auto;
+        margin-bottom: auto;
+        font-size: 0.8rem;
+        padding: 1.7rem;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        border-radius: 0px;
+        
+    }
+
+    .whitePlace{
+        width: auto;
+        height: 10vw;
+       
+    }
+
+/* About me              koniec */
+
+
+    p{ 
+        text-align: center;
+        justify-content: center;
+        }
+
+
+.mainPhoto {
+width: 100%;
+}
+#cytat{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    width: 60%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+
+}
+.henri{
+    text-align: right;
+}
+#lastPhoto img{
+
+width: 100%;
+}
+
+/*footer        początek     */
+#navifooter{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(223, 205, 188);
+}
+.contakt-footer{
+    width: 33%;
+    min-width:350px;
+    background-color:rgb(223, 205, 188);
+    font-size: 0.6rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+ }
+#footer-logo{
+ height: 100px;
+ text-align: center;
+}
+/*footer        koniec*/
